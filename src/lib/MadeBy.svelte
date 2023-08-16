@@ -1,6 +1,6 @@
 <script>
-    import svelteLogo from '../assets/Svelte.svg';
-    import viteLogo from '../assets/vite.svg';
+    import svelteLogo from 'svelte.svg';
+    import viteLogo from 'vite.svg';
 </script>
 
 <div>
