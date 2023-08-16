@@ -4,29 +4,29 @@
   async function copyToClipboard() {
     try {
       await navigator.clipboard.writeText(text);
-      alert("Copied to clipboard");
+      alert(`Copied ${text} clipboard`);
     } catch (err) {
       console.error("Failed to copy text: ", err);
+      alert("Failed to copy text");
     }
   }
 </script>
 
-<button on:click={copyToClipboard}>Copy to Clipboard</button>
+<button on:click={copyToClipboard}>copy hex ✂️</button>
 
 <style>
   /* Style your button as needed */
   button {
-    padding: 10px 15px;
     cursor: pointer;
-    border: none;
-    background-color: #007bff;
-    color: white;
+    border: 1px solid #1e1e1e;
+    background-color: transparent;
     border-radius: 4px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: black;
   }
 
   button:hover {
-    background-color: #0056b3;
+    background-color: #9e9e9e;
   }
 </style>
